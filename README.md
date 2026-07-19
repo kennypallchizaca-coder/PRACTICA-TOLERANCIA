@@ -7,7 +7,7 @@
 ![Chaos](https://img.shields.io/badge/Chaos-4_escenarios-EA4AAA)
 ![Estado](https://img.shields.io/badge/Estado-Verificado-16A34A)
 
-> Practica completa de tolerancia a fallos para un sistema de venta de entradas desplegado sobre Kubernetes. Incluye arquitectura multinodo, seis componentes, cuatro mecanismos de resiliencia implementados, inyección real de fallos, métricas, evidencias y análisis de producción de los dos escenarios restantes.
+> Práctica completa de tolerancia a fallos para un sistema de venta de entradas desplegado sobre Kubernetes. Incluye arquitectura multinodo, seis componentes, cuatro mecanismos de resiliencia implementados, inyección real de fallos, métricas, evidencias y análisis de producción de los dos escenarios restantes.
 
 | Información | Detalle |
 |---|---|
@@ -163,7 +163,7 @@ Instale kind desde su distribución oficial y confirme que el comando `kind` est
 ### 1. Crear el clúster
 
 ```powershell
-kind create Clúster `
+kind create cluster `
   --name tolerancia-fallos `
   --config kind-config.yaml
 ```
@@ -584,8 +584,8 @@ Cada servicio contiene únicamente los siguientes archivos técnicos:
 | [`06-metricas-nodos.txt`](evidence/06-metricas-nodos.txt) | CPU y memoria de los tres nodos. |
 | [`06-metricas-pods.txt`](evidence/06-metricas-pods.txt) | CPU y memoria por pod. |
 | [`06-hpa-final.txt`](evidence/06-hpa-final.txt) | HPA conectado a Metrics Server. |
-| [`07-verificacion-final.txt`](evidence/07-verificacion-final.txt) | Compra HTTP 201 y estado del clúster después de la limpieza. |
-| [`evidence/README.md`](evidence/README.md) | índice breve de toda la evidencia original. |
+| [`07-verificacion-final.txt`](evidence/07-verificacion-final.txt) | Compra HTTP 201 y estado del cluster después de la limpieza. |
+| [`evidence/README.md`](evidence/README.md) | Índice breve de toda la evidencia original. |
 
 ### Automatización y entrega
 
@@ -648,5 +648,5 @@ Limitaciones declaradas:
 ## Limpieza del entorno
 
 ```powershell
-kind delete Clúster --name tolerancia-fallos
+kind delete cluster --name tolerancia-fallos
 ```
