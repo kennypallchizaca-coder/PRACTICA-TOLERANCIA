@@ -1,0 +1,41 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: reservas-pdb
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      app: reservas
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: inventario-pdb
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      app: inventario
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: api-gateway
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: api-gateway
+  minReplicas: 2
+  maxReplicas: 6
+  behavior:
+    scaleDown:
+      stabilizationWindowSeconds: 60
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 60

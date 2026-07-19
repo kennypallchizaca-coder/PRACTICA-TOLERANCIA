@@ -1,0 +1,37 @@
+FECHA: 2026-07-12T18:45:11.9893479-05:00
+HTTP: 201
+RESPUESTA: {"success":true,"requestId":"1783899911578-0.6347405633139438","seatId":"FINAL-184511","message":"Reserva confirmada"}
+
+PODS:
+NAME                              READY   STATUS      RESTARTS   AGE   IP            NODE                        NOMINATED NODE   READINESS GATES
+api-gateway-64fcf486db-mpl89      1/1     Running     0          45s   10.244.2.16   tolerancia-fallos-worker    <none>           <none>
+api-gateway-64fcf486db-q78pw      1/1     Running     0          41s   10.244.1.15   tolerancia-fallos-worker2   <none>           <none>
+inventario-6b9bd4f4cc-bfwhk       1/1     Running     0          31s   10.244.1.18   tolerancia-fallos-worker2   <none>           <none>
+inventario-6b9bd4f4cc-c766d       1/1     Running     0          45s   10.244.2.18   tolerancia-fallos-worker    <none>           <none>
+k6-load-7l8bc                     0/1     Completed   0          33m   10.244.2.12   tolerancia-fallos-worker    <none>           <none>
+notificaciones-5968d68654-5sb2x   1/1     Running     0          44s   10.244.2.15   tolerancia-fallos-worker    <none>           <none>
+pagos-7875b79444-4rlw2            1/1     Running     0          32s   10.244.1.17   tolerancia-fallos-worker2   <none>           <none>
+pagos-7875b79444-xspnh            1/1     Running     0          44s   10.244.2.14   tolerancia-fallos-worker    <none>           <none>
+postgres-5cb77bd4cc-49rl8         1/1     Running     0          47m   10.244.2.8    tolerancia-fallos-worker    <none>           <none>
+reservas-7746cd6c9c-9slwk         1/1     Running     0          45s   10.244.2.17   tolerancia-fallos-worker    <none>           <none>
+reservas-7746cd6c9c-srpjt         1/1     Running     0          41s   10.244.1.16   tolerancia-fallos-worker2   <none>           <none>
+
+HPA:
+NAME          REFERENCE                TARGETS              MINPODS   MAXPODS   REPLICAS   AGE
+api-gateway   Deployment/api-gateway   cpu: <unknown>/60%   2         6         2          47m
+
+
+HPA TRAS ESTABILIZACION:
+NAME          REFERENCE                TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+api-gateway   Deployment/api-gateway   cpu: 2%/60%   2         6         2          47m
+NAME                              CPU(cores)   MEMORY(bytes)   
+api-gateway-64fcf486db-mpl89      1m           15Mi            
+api-gateway-64fcf486db-q78pw      1m           14Mi            
+inventario-6b9bd4f4cc-bfwhk       1m           11Mi            
+inventario-6b9bd4f4cc-c766d       1m           11Mi            
+notificaciones-5968d68654-5sb2x   1m           11Mi            
+pagos-7875b79444-4rlw2            1m           10Mi            
+pagos-7875b79444-xspnh            1m           11Mi            
+postgres-5cb77bd4cc-49rl8         1m           35Mi            
+reservas-7746cd6c9c-9slwk         1m           15Mi            
+reservas-7746cd6c9c-srpjt         1m           16Mi            

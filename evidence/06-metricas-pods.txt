@@ -1,0 +1,11 @@
+NAME                              CPU(cores)   MEMORY(bytes)   
+api-gateway-79fff65cdb-d8l4r      1m           158Mi           
+api-gateway-79fff65cdb-zx8f8      1m           157Mi           
+inventario-7cb74bc9d9-dx47n       1m           150Mi           
+inventario-7cb74bc9d9-wc7rb       1m           155Mi           
+notificaciones-66d9bdfc4b-hfwl6   1m           149Mi           
+pagos-696b5c549-dqzf5             1m           164Mi           
+pagos-696b5c549-sg8hl             1m           150Mi           
+postgres-5cb77bd4cc-49rl8         1m           35Mi            
+reservas-85779d5b4b-6xsm2         1m           159Mi           
+reservas-85779d5b4b-lf4h8         1m           160Mi           

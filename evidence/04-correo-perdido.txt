@@ -1,0 +1,7 @@
+=== CORREO PERDIDO ===
+NAME                              READY   STATUS        RESTARTS   AGE
+notificaciones-58f8cb5496-429j6   1/1     Terminating   0          20m
+
+=== RESULTADO ===
+HTTP: 504
+

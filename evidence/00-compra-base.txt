@@ -1,0 +1,6 @@
+{
+  "success": true,
+  "requestId": "1784483972507-0.5805806482422657",
+  "seatId": "BASE-003",
+  "message": "Reserva confirmada"
+}

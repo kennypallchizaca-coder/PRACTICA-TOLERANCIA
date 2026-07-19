@@ -1,0 +1,12 @@
+=== INYECCION ===
+Eliminando inventario-6d845595d-9wsdj durante una reserva...
+pod "inventario-6d845595d-9wsdj" deleted from default namespace
+
+=== RESULTADO ===
+HTTP: 201
+RESPUESTA: {
+  "success": true,
+  "requestId": "1784484225446-0.6601410231858387",
+  "seatId": "FANTASMA-01",
+  "message": "Reserva confirmada"
+}

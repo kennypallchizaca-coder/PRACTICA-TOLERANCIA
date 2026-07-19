@@ -1,0 +1,10 @@
+=== PAGOS CON RETARDO ===
+NAME                    READY   STATUS    RESTARTS   AGE   IP           NODE                        NOMINATED NODE   READINESS GATES
+pagos-c8b4ffc86-5f2s8   1/1     Running   0          88s   10.244.1.7   tolerancia-fallos-worker2   <none>           <none>
+pagos-c8b4ffc86-mtm7w   1/1     Running   0          77s   10.244.2.9   tolerancia-fallos-worker    <none>           <none>
+
+=== RESULTADO ===
+HTTP: 504
+RESPUESTA: 
+LATENCIA_CLIENTE_MS: 6535
+

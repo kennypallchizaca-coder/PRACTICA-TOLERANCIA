@@ -1,0 +1,4 @@
+NAME                              CPU(cores)   CPU(%)   MEMORY(bytes)   MEMORY(%)   
+tolerancia-fallos-control-plane   128m         0%       711Mi           4%          
+tolerancia-fallos-worker          58m          0%       1094Mi          7%          
+tolerancia-fallos-worker2         35m          0%       1198Mi          7%          

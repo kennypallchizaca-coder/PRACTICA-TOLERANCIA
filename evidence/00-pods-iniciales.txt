@@ -1,0 +1,12 @@
+NAME                              READY   STATUS        RESTARTS      AGE    IP           NODE                        NOMINATED NODE   READINESS GATES
+api-gateway-79fff65cdb-d8l4r      1/1     Running       0             6m     10.244.1.2   tolerancia-fallos-worker2   <none>           <none>
+api-gateway-79fff65cdb-zx8f8      1/1     Running       0             6m     10.244.2.2   tolerancia-fallos-worker    <none>           <none>
+inventario-7cb74bc9d9-d6bnk       1/1     Running       0             6m     10.244.1.3   tolerancia-fallos-worker2   <none>           <none>
+inventario-7cb74bc9d9-dx47n       1/1     Running       0             6m     10.244.2.3   tolerancia-fallos-worker    <none>           <none>
+notificaciones-66d9bdfc4b-zjdpq   1/1     Running       0             32s    10.244.1.8   tolerancia-fallos-worker2   <none>           <none>
+notificaciones-bb8d99f48-qffd9    0/1     Terminating   3 (42s ago)   119s   10.244.1.7   tolerancia-fallos-worker2   <none>           <none>
+pagos-696b5c549-4v564             1/1     Running       0             6m     10.244.2.5   tolerancia-fallos-worker    <none>           <none>
+pagos-696b5c549-p4fm4             1/1     Running       0             6m     10.244.1.4   tolerancia-fallos-worker2   <none>           <none>
+postgres-5cb77bd4cc-49rl8         1/1     Running       0             6m     10.244.2.8   tolerancia-fallos-worker    <none>           <none>
+reservas-774cd7bfb5-s2hst         1/1     Running       0             6m     10.244.1.5   tolerancia-fallos-worker2   <none>           <none>
+reservas-774cd7bfb5-trdrv         1/1     Running       0             6m     10.244.2.7   tolerancia-fallos-worker    <none>           <none>

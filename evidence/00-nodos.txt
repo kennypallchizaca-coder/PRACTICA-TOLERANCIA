@@ -1,0 +1,4 @@
+NAME                              STATUS   ROLES           AGE     VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE                         KERNEL-VERSION                      CONTAINER-RUNTIME
+tolerancia-fallos-control-plane   Ready    control-plane   7m15s   v1.35.0   172.18.0.3    <none>        Debian GNU/Linux 12 (bookworm)   6.6.114.1-microsoft-standard-WSL2   containerd://2.2.0
+tolerancia-fallos-worker          Ready    <none>          7m3s    v1.35.0   172.18.0.4    <none>        Debian GNU/Linux 12 (bookworm)   6.6.114.1-microsoft-standard-WSL2   containerd://2.2.0
+tolerancia-fallos-worker2         Ready    <none>          7m3s    v1.35.0   172.18.0.2    <none>        Debian GNU/Linux 12 (bookworm)   6.6.114.1-microsoft-standard-WSL2   containerd://2.2.0
